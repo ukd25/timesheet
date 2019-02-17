@@ -2,18 +2,19 @@
 <html lang="en">
     <head>
       <meta charset="UTF-8" >
+   
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>HRMS</title>
     </head>
 
-    <body>
+    <body class="body">
       <!--Header starting-->
-      <header>
+      <header class="header">
       <nav class="navbar">
         <div class="navbar-header">
         <a class="navbar-brand" title="Argil DX" alt="Argil DX" href="#"><img width="15%" src="img/argil.png" ></a>
   
-      <ul>
+      <ul class="navbar-right-menu">
       <li class="navbar-right"><a href="#" title="Manager View"><img src="img/layer-14.jpg"></a> Switch to Manager View</li>
       <span>|</span>
       <li class="navbar-right"><a href="#" title="Notifications"><img src="img/bell.svg"></a></li>
@@ -24,16 +25,17 @@
 
   </nav>
       <div class="dashboard">
-        <span>
+        <span class="dashboard">
           Dashboard
         </span>
 
-        <a herf="#" title="Submit Timesheet">
-            <button>
-              <img src="">
+       
+   
+            <button onclick="location.href='resume.html'" class="Submit_timesheet">
+              <img class="submitting_image" src="" >
               Submit Timesheet
             </button>
-          </a>
+        
       </div>
 </header>
 <!--End of header tag-->
@@ -53,22 +55,25 @@
 <div class="project-numbers">
 
   
-    <p><img src="img/project-number.jpg" alt="project stop watch icon"><strong>04</strong><span>  Projects</span></p>
-    <hr>
-    <p><img src="img/project-hour.jpg" alt="project time count spreadsheet"><strong>37</strong><span>  Hours spent this week</span></p>
+    <div class="project_numbers"><img src="img/project-number.jpg" alt="project stop watch icon">
+      <span class="numbers">04</span> <span>Projects</span>
+    </div>
+   
+    <div class="project_hours"><img src="img/project-hour.jpg" alt="project time count spreadsheet">
+      <span class="hours">37</span><span>  Hours spent this week</span></div>
   
 </div>
 <!--End of project numbers block-->
 
 <!--Project name and description-->
 <div class="project-name">
-    <p>
+    <div class="project_status">
       <img src="img/project.jpg" alt="project stop watch icon">
-      <strong> 
-         Projects
-      </strong> worked on this week</p>
-      <hr>
-      <p><pre><span>|</span>  Bright House Financial  <span>|</span>  "C&En"  <span>|</span>  Bajaj Finance  <span>|</span>  Internal Projects</pre></p>
+       
+       <span>Projects</span>  
+     <span> worked on this week</span> <span class="project_deadline">11 Feb to 15 Feb</span></div>
+    
+      <div class="all_projects"><pre><span>|</span>  Bright House Financial  <span>|</span>  "C&En"  <span>|</span>  Bajaj Finance  <span>|</span>  Internal Projects</pre></div>
 </div>
 <!--End of project-name-->
 
@@ -86,52 +91,57 @@
         <div class="notification-list ">
    
  
-        <input type="checkbox" id="Submit Timesheet" />  
+        <input type="checkbox" id="Submit-Timesheet_1" />  
         <label for="Submit Timesheet">Submit Timesheet
            
         </label>
-        <p> To:Ankur Mittal</p>
-        <button type="button" class="btn">
+        <div class="person_associated"> To:Ankur Mittal</div>
+        <a href="" class="status-badge">
              <span class="badge badge-light">Due Today</span>
-          </button>
+        </a>
      </div>
 
      <div class="notification-list">
-        <input type="checkbox" id="Submit Timesheet" />  
+        <input type="checkbox" id="Submit_Timesheet_2" />  
         <label for="Submit Timesheet">Approve Timesheet
             
         </label>
-        <p>Emp Name-Rohan Vora</p>
-        <button type="button" class="btn">
+        <div class="person_associated">Emp Name-Rohan Vora</div>>
+        <a href="" class="status-badge">
             <span class="badge badge-light">Due in 2 Days</span>
-         </button>
+        </a>
         </div>
         <div class="notification-list">
-        <input type="checkbox" id="Submit Timesheet" />  
+        <input type="checkbox" id="Submit_Timesheet_3" />  
         <label for="Submit Timesheet">Approve Timesheet
         
         </label>
-        <p>Emp Name-Sidharth</p>
-        <button type="button" class="btn ">
+        <div class="person_associated">Emp Name-Sidharth</div>
+        <a href="" class="status-badge">
             <span class="badge badge-light">Due in 2 Days</span>
-         </button>
+        </a>
         </div>
 
         <div class="notification-list">
-        <input type="checkbox" id="Submit Timesheet" checked />  
+        <input type="checkbox" id="Submit_Timesheet_4" checked />  
         <label for="Submit Timesheet"><strike>Approve Timesheet</strike>
       
         </label>
-        <p><strike>Emp Name-Pranjal</strike></p> 
-        <button type="button" class="btn">
+        <div class="person_associated">
+          <span><strike>Emp Name-Pranjal</strike>
+          </span>
+          </div> 
+        <a href="" class="status-badge">
             <span class="badge badge-light">Done</span>
-         </button>
+        </a>
         </div>
         <div class="message">
-            <img src="">
-            <strong>Congratulaion</strong>
-            <img src="">
-            <p>You have completed Tasks Last Week.</p>
+           
+            <span class="congratulations">Congratulaion</span>
+           <div class="congratulation_message">
+            <img src="" class="congratulation_emoji">
+            You have completed Tasks Last Week.</div>
+            <img src="" class="congratulation_emoji">
         </div>
       
 
@@ -146,112 +156,120 @@
   <div class="timesheet-heading">
         <h3>Timesheet</h3>
       </div>
-      <ul>
+      <ul class="timesheet-menu">
         <li>
       <select class="view_drop">
-          <option>Day View</option>
-          <option>Month View</option>
-          <option>Year view</option>
+          <option value="Day View">Day View</option>
+          <option value="Month View">Month View</option>
+          <option value="Year View">Year View</option>
         </select>
       </li>
-      <li> <input type="search" id="project_search"></li>
-      <li><button class="btn btn-add_task">
-          <img src="">Add Task
-        </button>
+      <li><input type="search" id="project_search"></li>
+      <li><button  class="btn-add_task">
+          <img class="add_task_symbol" src="">Add Task
+      </button>
       </li>
       </ul>
     </div> 
 <div class="timesheet-status">
-  <p>
+  
   <h3>
         Today's Timesheet(3)
     </h3>
-      <span>
+      <span class="date">
         5th Feb, 2019
       </span>
-      </p>
+      
     </div>
-
- 
+<article class="project_row" > 
 
 <div class="row">
 
   <div class="timesheet-project-name">
-      <p>Bajaj Finance</p>
-      <p><img src="">
+      <h4>Bajaj Finance</h4>
+      <div class="project_description"><img src="">
         Working on Redesigning the UX of Loan providing platform for Bajaj Finance.
-      </p>
+      </div>
   </div>
   
   <div class="timesheet-project-duration">
-      <span>Time Spent</span>
-      <span><img src="">04:00 pm - 07:00 pm</span>
+      <span class="time_spent">Time Spent</span>
+      <span class="duration"><img src="">04:00 pm - 07:00 pm</span>
       <img src="" title="edit">
       <img src="" title="option">
   </div>
 
 </div>
 
+</article>
 
+
+<article class="project_row" > 
 <div class="row">
 
     <div class="timesheet-project-name">
-        <p>Bright House Finance</p>
-        <p><img src="">
+       <h5> Bright House Finance</h5>
+        <div class="project_description"><img src="">
           Working on Redesigning the UX of Loan providing platform for BHF.
-        </p>
+        </div>
     </div>
     
     <div class="timesheet-project-duration">
-        <span>Time Spent</span>
-        <span><img src="">01:00 pm - 04:00 pm</span>
+        <span class="time_spent">Time Spent</span>
+        <span class="duration"><img src="">01:00 pm - 04:00 pm</span>
         <img src="" title="edit">
         <img src="" title="option">
     </div>
   
   </div>
+</article>
+  
 
+<article class="project_row" > 
   <div class="row">
 
       <div class="timesheet-project-name">
-          <p>Internal Projects</p>
-          <p><img src="">
+          <h5>Internal Projects</h5>
+          <div class="project_description"><img src="">
             Working on Redesigning the UX of Loan providing platform for Internal Projects.
-          </p>
+          </div>
       </div>
       
       <div class="timesheet-project-duration">
-          <span>Time Spent</span>
-          <span><img src="">09:00 am - 12:00 pm</span>
-          <img src="" title="edit">
-          <img src="" title="option">
+          <span class="time_spent">Time Spent</span>
+          <span duration><img src="">09:00 am - 12:00 pm</span>
+          <img class="edit_image" src="" title="edit">
+          <img class="option_image" src="" title="option">
       </div>
     
     </div>
+</article>
 
-    <div class="row">
-        <p>
+
+<article class="project_row" > 
+<div class="row">
+        <h4>
             Yesterday's Timesheet(3)
-          </p>
-          <p>
+        </h4>
+          <div>
             4th Feb, 2019
-          </p>
+          </div>
         <div class="timesheet-project-name">
-            <p>C&En</p>
-            <p><img src="">
+            <h5>C&En</h5>
+            <div class="project_description"><img src="">
               Working on Redesigning the UX of Loan providing platform for C&En.
-            </p>
+            </div>
         </div>
         
         <div class="timesheet-project-duration">
-            <span>Time Spent</span>
-            <span><img src="">04:00 pm - 07:00 pm</span>
+            <span class="time_spent">Time Spent</span>
+            <span class="duration"><img src="">04:00 pm - 07:00 pm</span>
             <img src="" title="edit">
             <img src="" title="option">
         </div>
       
       </div>
-
+    </article> 
 
   </div>
 </section>
