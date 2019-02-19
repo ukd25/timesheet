@@ -4,6 +4,11 @@
       <meta charset="UTF-8" >
    
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="style.css"  rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
       <title>HRMS</title>
     </head>
 
@@ -12,14 +17,14 @@
       <header class="header">
       <nav class="navbar">
         <div class="navbar-header">
-        <a class="navbar-brand" title="Argil DX" alt="Argil DX" href="#"><img width="15%" src="img/argil.png" ></a>
+        <a class="navbar-brand" title="Argil DX" href="#">
+          <img id="logo" alt="Argil DX" src="img/argil.png" ></a>
   
       <ul class="navbar-right-menu">
-      <li class="navbar-right"><a href="#" title="Manager View"><img src="img/layer-14.jpg"></a> Switch to Manager View</li>
-      <span>|</span>
-      <li class="navbar-right"><a href="#" title="Notifications"><img src="img/bell.svg"></a></li>
-      <li class="navbar-right"><a href="#" title="Settings"><img src="img/settings.svg"></a></li>
-      <li class="navbar-right"><a href="#" title="User"><img src="img/user.svg"></a></li>
+      <li class="navbar-right"><a href="#" class="manager_icon" title="Manager View"><img class="manager_icon" src="img/layer-14.jpg"> Switch to Manager View</a> </li>
+      <li class="navbar-right"><a href="#" class="notification_icon" title="Notifications"><img class="right_menu" src="img/bell.svg"></a></li>
+      <li class="navbar-right"><a href="#" class="setting_icon" title="Settings"><img class="right_menu" src="img/settings.svg"></a></li>
+      <li class="navbar-right"><a href="#" class="profile_icon" title="User"><img class="right_menu" src="img/user.svg"></a></li>
     </ul>
    </div>
 
@@ -31,7 +36,7 @@
 
        
    
-            <button onclick="location.href='resume.html'" class="Submit_timesheet">
+            <button type="button" class="Submit_timesheet">
               <img class="submitting_image" src="" >
               Submit Timesheet
             </button>
@@ -52,27 +57,40 @@
 
 
 <!--Project numbers and time-->
-<div class="project-numbers">
+<div class="total_projects">
 
   
-    <div class="project_numbers"><img src="img/project-number.jpg" alt="project stop watch icon">
-      <span class="numbers">04</span> <span>Projects</span>
+    <div class="project_numbers">
+      <img src="img/project-number.jpg" class="project_name_image" alt="project stop watch icon">
+      <span class="numbers">04</span> 
+      <span class="project_span">Projects</span>
     </div>
    
-    <div class="project_hours"><img src="img/project-hour.jpg" alt="project time count spreadsheet">
-      <span class="hours">37</span><span>  Hours spent this week</span></div>
+    <div class="project_points"><img class="champian_badge" src="" >
+      <span class="status">Champion</span>
+      <div class="progress"><progress max="100" value="64"> </progress>
+     <span class="status_message">80 points to legend</span>
+      </div>
+      </div>
   
 </div>
 <!--End of project numbers block-->
 
 <!--Project name and description-->
-<div class="project-name">
+<div class="all_project_names">
     <div class="project_status">
       <img src="img/project.jpg" alt="project stop watch icon">
        
        <span>Projects</span>  
-     <span> worked on this week</span> <span class="project_deadline">11 Feb to 15 Feb</span></div>
-    
+     <span> worked on from</span> <span class="project_deadline">11 Feb to 15 Feb</span></div>
+    <div class="project_bar">
+      <ul class="project_bar_list">
+        <span class="bhf_bar"></span>
+        <span class="Cen_bar"></span>
+        <span class="bf_bar"></span>
+        <span class="ip_projects"></span>
+      </ul>
+    </div>
       <div class="all_projects"><pre><span>|</span>  Bright House Financial  <span>|</span>  "C&En"  <span>|</span>  Bajaj Finance  <span>|</span>  Internal Projects</pre></div>
 </div>
 <!--End of project-name-->
@@ -84,20 +102,20 @@
 
 
 <!--Notification board-->
-<aside class="notification-board">
+<aside class="notification_board">
 <div class="notifications">
-        <h4>My notifications</h4>
+        <div class="my_notification">My notifications</div>
    
         <div class="notification-list ">
    
  
-        <input type="checkbox" id="Submit-Timesheet_1" />  
+        <input type="checkbox" id="Submit_Timesheet_1" />  
         <label for="Submit Timesheet">Submit Timesheet
            
         </label>
         <div class="person_associated"> To:Ankur Mittal</div>
-        <a href="" class="status-badge">
-             <span class="badge badge-light">Due Today</span>
+        <a href="" class="status_badge_1">
+             <span class="badge badge_light">Due Today</span>
         </a>
      </div>
 
@@ -106,24 +124,36 @@
         <label for="Submit Timesheet">Approve Timesheet
             
         </label>
-        <div class="person_associated">Emp Name-Rohan Vora</div>>
-        <a href="" class="status-badge">
-            <span class="badge badge-light">Due in 2 Days</span>
+        <div class="person_associated">Emp Name-Rohan Vora</div>
+        <a href="" class="status_badge_2">
+            <span class="badge badge_light">Due in 2 Days</span>
         </a>
         </div>
+      
         <div class="notification-list">
-        <input type="checkbox" id="Submit_Timesheet_3" />  
+            <input type="checkbox" id="Submit_Timesheet_3" />  
+            <label for="Submit Timesheet">Approve Timesheet
+            
+            </label>
+            <div class="person_associated">Emp Name-Sidharth</div>
+            <a href="" class="status_badge_3">
+                <span class="badge badge-light">Due in 2 Days</span>
+            </a>
+            </div>
+      
+        <div class="notification-list">
+        <input type="checkbox" id="Submit_Timesheet_4" />  
         <label for="Submit Timesheet">Approve Timesheet
         
         </label>
         <div class="person_associated">Emp Name-Sidharth</div>
-        <a href="" class="status-badge">
+        <a href="" class="status_badge_3">
             <span class="badge badge-light">Due in 2 Days</span>
         </a>
         </div>
 
         <div class="notification-list">
-        <input type="checkbox" id="Submit_Timesheet_4" checked />  
+        <input type="checkbox" id="Submit_Timesheet_5" checked />  
         <label for="Submit Timesheet"><strike>Approve Timesheet</strike>
       
         </label>
@@ -131,8 +161,8 @@
           <span><strike>Emp Name-Pranjal</strike>
           </span>
           </div> 
-        <a href="" class="status-badge">
-            <span class="badge badge-light">Done</span>
+        <a href="" class="status_badge_5">
+            <span class="badge badge_light">Done</span>
         </a>
         </div>
         <div class="message">
@@ -150,50 +180,49 @@
 </aside>
 
 <!--End of notification block-->
-<section class="section-timesheet">
+<section class="section_timesheet">
   <div class="timesheet">
-  <div class="timesheet-header"> 
-  <div class="timesheet-heading">
-        <h3>Timesheet</h3>
+  <div class="timesheet_header"> 
+  <div class="timesheet_heading">
+        Timesheet
       </div>
-      <ul class="timesheet-menu">
-        <li>
-      <select class="view_drop">
-          <option value="Day View">Day View</option>
-          <option value="Month View">Month View</option>
-          <option value="Year View">Year View</option>
-        </select>
+      <ul class="timesheet_menu">
+          <li class="search"><i class="fas fa-search"></i></li>
+        <li class="week_view">
+            <i class="far fa-calendar"></i> Week View
       </li>
-      <li><input type="search" id="project_search"></li>
-      <li><button  class="btn-add_task">
-          <img class="add_task_symbol" src="">Add Task
-      </button>
+      
+      <li class="add_task">
+        <i class="fas fa-plus-circle"></i> Add Task
       </li>
       </ul>
     </div> 
-<div class="timesheet-status">
+<div class="timesheet_status">
   
-  <h3>
+  <div class="today_timesheet">
         Today's Timesheet(3)
-    </h3>
-      <span class="date">
+  </div>
+      <div class="date">
         5th Feb, 2019
-      </span>
+      </div>
       
     </div>
 <article class="project_row" > 
 
 <div class="row">
 
-  <div class="timesheet-project-name">
-      <h4>Bajaj Finance</h4>
+  <div class="timesheet_project_name">
+     <span> Bajaj Finance</span>
       <div class="project_description"><img src="">
         Working on Redesigning the UX of Loan providing platform for Bajaj Finance.
       </div>
   </div>
   
-  <div class="timesheet-project-duration">
-      <span class="time_spent">Time Spent</span>
+  <div class="timesheet_project_duration">
+    <div class="time_spent_div">  
+      <i class="far fa-hourglass"></i>
+        <span class="time_spent">Time Spent</span>
+        </div>
       <span class="duration"><img src="">04:00 pm - 07:00 pm</span>
       <img src="" title="edit">
       <img src="" title="option">
@@ -207,15 +236,18 @@
 <article class="project_row" > 
 <div class="row">
 
-    <div class="timesheet-project-name">
-       <h5> Bright House Finance</h5>
+    <div class="timesheet_project_name">
+       <span> Bright House Finance</span>
         <div class="project_description"><img src="">
           Working on Redesigning the UX of Loan providing platform for BHF.
         </div>
     </div>
     
-    <div class="timesheet-project-duration">
+    <div class="timesheet_project_duration">
+        <div class="time_spent_div">  
+            <i class="far fa-hourglass"></i>
         <span class="time_spent">Time Spent</span>
+        </div>
         <span class="duration"><img src="">01:00 pm - 04:00 pm</span>
         <img src="" title="edit">
         <img src="" title="option">
@@ -228,15 +260,18 @@
 <article class="project_row" > 
   <div class="row">
 
-      <div class="timesheet-project-name">
-          <h5>Internal Projects</h5>
+      <div class="timesheet_project_name">
+          <span>Internal Projects</span>
           <div class="project_description"><img src="">
             Working on Redesigning the UX of Loan providing platform for Internal Projects.
           </div>
       </div>
       
-      <div class="timesheet-project-duration">
+      <div class="timesheet_project_duration">
+          <div class="time_spent_div">  
+              <i class="far fa-hourglass"></i>
           <span class="time_spent">Time Spent</span>
+          </div>
           <span duration><img src="">09:00 am - 12:00 pm</span>
           <img class="edit_image" src="" title="edit">
           <img class="option_image" src="" title="option">
@@ -247,23 +282,27 @@
 
 
 <article class="project_row" > 
-<div class="row">
-        <h4>
+<div class="yesterday_row">
+        <div class="yesterday_timesheet">
             Yesterday's Timesheet(3)
-        </h4>
-          <div>
+        </div>
+          <div class="date">
             4th Feb, 2019
           </div>
-        <div class="timesheet-project-name">
-            <h5>C&En</h5>
+        <div class="timesheet_project_name">
+            <span>C&En</span>
             <div class="project_description"><img src="">
               Working on Redesigning the UX of Loan providing platform for C&En.
             </div>
         </div>
         
-        <div class="timesheet-project-duration">
+        <div class="timesheet_project_duration">
+            <div class="time_spent_div">  
+                <i class="far fa-hourglass"></i>
             <span class="time_spent">Time Spent</span>
+            </div>
             <span class="duration"><img src="">04:00 pm - 07:00 pm</span>
+           
             <img src="" title="edit">
             <img src="" title="option">
         </div>

@@ -1,0 +1,205 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#logo{
+width:125px;
+height: 33px;;
+}
+
+.navbar-right-menu
+{
+    list-style-type: none;
+}
+
+/*Descendant combinator */
+li a {
+  text-decoration: none;   
+}
+.manager_icon
+{
+    width:16px;
+    height: 26px;
+
+}
+.right-menu
+{
+    width: 26px;
+    height: 26px;
+}
+
+.dashboard
+{
+height: 51px;
+width:100%;
+background-color:#101b33;
+line-height: 50px;
+}
+
+.dashboard span
+{
+font-size: 18px;
+color: white;
+}
+
+.dashboard button
+{
+background-color: #00aacb;
+width: 219px;
+height: 43px;
+font-size: 16px;
+}
+.container
+{
+   background-color:#eaeaea;
+}
+
+.total_projects
+{
+    width:23.1%;
+    height:15.6%;
+    background-color:#ffffff;
+}
+.numbers
+{
+    font-size: 30px;
+    font-weight: 400;
+}.project_span
+{
+    font-size:18px;
+}
+.project_points .status
+{
+ font-size:30px;
+ font-weight: 400;   
+}
+
+ .progress progress
+{
+height: 6px;
+}
+
+.all_project_names
+{
+width: 47.2%;
+height: 15.6%;
+background-color: #ffffff;
+}
+.project_bar_list
+{
+list-style-type: none;
+}
+.project_bar_list .bhf_bar
+{
+width:28%;
+height: 6.5%;
+background-color: #9a52b6;
+}
+
+.project_bar_list .cen_bar
+{
+    width:10.5%;
+    height: 6.5%;
+    background-color: #2c97df;
+}
+
+.project_bar_list .bf_bar
+{
+    width:16.1%;
+    height: 6.5%;
+    background-color: #f59900;
+}
+
+.project_bar_list .ip_bar
+{
+    width:19.4%;
+    height: 6.5%;
+    background-color: #34b86f;
+}
+/* 
+.all_projects
+{
+    will be filled later 
+}
+*/
+
+.notification_board
+{
+    width:23.1%;
+    height: 64.8%;
+    background-color:#ffffff;
+}
+
+.my_notification, .timesheet_heading
+{
+font-size:18px;
+font-weight: 400;
+}
+.status_badge_1
+{
+    width:22.6%;
+    height: 4.1%;
+    background-color: #ea4b36;
+    text-decoration: none;
+}
+
+.status_badge_2, .status_badge_3, .status_badge_4
+{
+    width:28.2%;
+    height: 4.1%;
+    background-color: #b7c0cf;
+    text-decoration: none;
+}
+
+.status_badge_5
+{
+    width:16.3%;
+    height: 4.1%;
+    background-color: #34b86f;
+    text-decoration: none;
+}
+.congratulation{
+    font-weight: 400;
+}
+
+.section_timesheet
+{
+    width:71.4%;
+    height: 61.4%;
+    background-color: #ffffff;
+}
+.timesheet_menu
+{
+ list-style-type: none;   
+}
+
+.timesheet_menu .week_view, .timesheet_menu .add_task
+{
+    color:#3cbed7;
+}
+
+.today_timesheet, .yesterday_timesheet
+{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.timesheet_status .date, .yesterday_row .date
+{
+font-size: 14px;
+}
+
+.timesheet_project_name span
+{
+    font-size: 17px;
+    font-weight: 500;
+}
+.fa-hourglass
+{
+    color:#3cbed7;
+}
+
+.project_description
+{
+    font-size:16px;
+}
+
